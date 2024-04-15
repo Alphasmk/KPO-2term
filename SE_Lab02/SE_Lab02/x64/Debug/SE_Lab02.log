@@ -1,0 +1,4 @@
+﻿  SE_Lab02.cpp
+E:\уник\КПО\SE_Lab02\SE_Lab02\SE_Lab02.cpp(29,12): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
+E:\уник\КПО\SE_Lab02\SE_Lab02\SE_Lab02.cpp(29,24): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
+  SE_Lab02.vcxproj -> E:\уник\КПО\SE_Lab02\x64\Debug\SE_Lab02.exe
