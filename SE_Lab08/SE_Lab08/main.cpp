@@ -11,7 +11,7 @@ int main()
 {
     setlocale(LC_CTYPE, "Rus");
     int result1 = defaultparm(1, 2, 3, 4, 5);
-    int result2 = defaultparm(1, 2, 3, 4, 5, 9, 12);
+    int result2 = defaultparm(1, 2, 3, 4, 5, 9, 8);
     cout << "5 параметров: " << result1 << endl;
     cout << "7 параметров: " << result2 << endl;
 }
