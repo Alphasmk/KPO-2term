@@ -50,7 +50,7 @@ In::INTAB In::getin(wchar_t infile[], wchar_t outfile[])
         }
         else if (buf == L'\n')
         {
-            in.text[index] = '\n';
+            in.text[index] = '|';
             in.lines++;
             index++;
         }

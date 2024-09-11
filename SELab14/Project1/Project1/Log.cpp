@@ -120,7 +120,13 @@ void Log::WriteError(LOG log, Error::ERRORS error)
 		delete inerr;
 		return;
 	}
-	(*log.stream) << "Ошибка " << error.id << ": " << error.message;
+	if (log.stream->is_open())
+	{
+		(*log.stream) << "Ошибка ";
+		(*log.stream) << error.id;
+		(*log.stream) << ": ";
+		(*log.stream) << error.message;
+	}
 	if (error.inext.col >=0 && error.inext.line >= 0)
 	{
 		(*log.stream) << ", строка " << error.inext.line << ", позиция " << error.inext.col << std::endl;
